@@ -7,12 +7,22 @@
 </head>
 
 <body>
-	<h1>What is the captial of India?</h1>
-	<input type="radio" name="capital" > <span>New Delhi</span><br/>
-	<input type="radio" name="capital" > <span>Mumbai</span>
+	<section role="region" aria-labelledby="capital-question">
+  <h1 id="capital-question" role="heading">What is the capital of India?</h1>
 
-	<blockquote id="quote">New Delhi is the capital of India and an administrative district of NCT Delhi.</blockquote>
-	<!-- the entire body must be written by student -->
+  <form>
+    <input type="radio" id="newdelhi" name="capital" value="New Delhi">
+    <label for="newdelhi">New Delhi</label><br/>
+
+    <input type="radio" id="mumbai" name="capital" value="Mumbai">
+    <label for="mumbai">Mumbai</label>
+  </form>
+
+  <blockquote cite="https://en.wikipedia.org/wiki/New_Delhi" id="quote">
+    New Delhi is the capital of India and an administrative district of NCT Delhi.
+  </blockquote>
+</section>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
